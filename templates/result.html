@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Результаты детекции</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Результаты детекции</h1>
+  {% for img in images %}
+    <div class="image-container">
+      <h3>Изображение {{ loop.index }}</h3>
+      <img src="data:image/jpeg;base64,{{ img }}" alt="Результат детекции {{ loop.index }}">
+    </div>
+  {% endfor %}
+  <a class="back-link" href="/">← Вернуться к загрузке</a>
+</body>
+</html>
