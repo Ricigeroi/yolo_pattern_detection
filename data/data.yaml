@@ -1,0 +1,14 @@
+train: C:\Users\andre\Desktop\yolo_patterns\data\train\images
+val: C:\Users\andre\Desktop\yolo_patterns\data\valid\images
+test: C:\Users\andre\Desktop\yolo_patterns\data\test\images
+
+
+nc: 6
+names: ['Head and shoulders bottom', 'Head and shoulders top', 'M_Head', 'StockLine', 'Triangle', 'W_Bottom']
+
+roboflow:
+  workspace: mod5gen20-cnkzt
+  project: stocks-2ulc2
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mod5gen20-cnkzt/stocks-2ulc2/dataset/1
